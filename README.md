@@ -69,23 +69,28 @@ Docker Hub account
 
 
 
---
+---
 
 📦 Step 1 — Build & Push Docker Image
 
  Navigate to application directory
+ 
 cd app
 
- Install dependencies locally (optional)
+ Install dependencies locally 
+ 
 pip install -r requirements.txt
 
  Build Docker image
+ 
 docker build -t <dockerhub-username>/python-app:latest .
 
  Login to Docker Hub
+ 
 docker login
 
  Push the image to Docker Hub repository
+ 
 docker push <dockerhub-username>/python-app:latest
 
 
@@ -94,18 +99,23 @@ docker push <dockerhub-username>/python-app:latest
 🌍 Step 2 — Deploy with Terraform
 
 Navigate to Terraform configuration
+
 cd terraform
 
 Initialize Terraform
+
 terraform init
 
  Validate configuration
+ 
 terraform validate
 
 Review plan
+
 terraform plan
 
  Apply configuration
+ 
 terraform apply -auto-approve
 
 Terraform Actions:
@@ -145,5 +155,6 @@ Terraform enables scalable cloud provisioning
 AWS EC2 provides reliable hosting
 
 Combining Docker & Terraform automates deployment workflows
+
 
 
