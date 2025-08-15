@@ -61,7 +61,7 @@ Python 3.x installed locally
 
 Docker installed and running
 
-Terraform installed (v1.x or above)
+Terraform installed 
 
 AWS account configured with CLI access
 
@@ -69,7 +69,7 @@ Docker Hub account
 
 
 
----
+--
 
 📦 Step 1 — Build & Push Docker Image
 
@@ -93,7 +93,7 @@ docker push <dockerhub-username>/python-app:latest
 
 🌍 Step 2 — Deploy with Terraform
 
-#Navigate to Terraform configuration
+Navigate to Terraform configuration
 cd terraform
 
 Initialize Terraform
@@ -145,4 +145,5 @@ Terraform enables scalable cloud provisioning
 AWS EC2 provides reliable hosting
 
 Combining Docker & Terraform automates deployment workflows
+
 
