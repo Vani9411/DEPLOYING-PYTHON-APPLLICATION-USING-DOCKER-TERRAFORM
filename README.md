@@ -1,5 +1,6 @@
 🚀 Deploying Python Application using Docker & Terraform
 
+
 📖 Project Overview
 
 In this project, I deployed a Python web application in a containerized environment using Docker and automated the infrastructure provisioning with Terraform.
@@ -25,9 +26,11 @@ This setup follows Infrastructure as Code (IaC) principles to ensure deployment 
 Tool	Purpose
 
 Python 3.x	Application codebase
+
 Docker	Containerizing the application
 Terraform	Provisioning cloud infrastructure
 AWS EC2	Hosting environment
+
 Docker Hub	Storing Docker images
 
 
@@ -70,19 +73,19 @@ Docker Hub account
 
 📦 Step 1 — Build & Push Docker Image
 
-# Navigate to application directory
+ Navigate to application directory
 cd app
 
-# Install dependencies locally (optional)
+ Install dependencies locally (optional)
 pip install -r requirements.txt
 
-# Build Docker image
+ Build Docker image
 docker build -t <dockerhub-username>/python-app:latest .
 
-# Login to Docker Hub
+ Login to Docker Hub
 docker login
 
-# Push the image to Docker Hub repository
+ Push the image to Docker Hub repository
 docker push <dockerhub-username>/python-app:latest
 
 
@@ -90,19 +93,19 @@ docker push <dockerhub-username>/python-app:latest
 
 🌍 Step 2 — Deploy with Terraform
 
-# Navigate to Terraform configuration
+#Navigate to Terraform configuration
 cd terraform
 
-# Initialize Terraform
+Initialize Terraform
 terraform init
 
-# Validate configuration
+ Validate configuration
 terraform validate
 
-# Review plan
+Review plan
 terraform plan
 
-# Apply configuration
+ Apply configuration
 terraform apply -auto-approve
 
 Terraform Actions:
@@ -123,12 +126,6 @@ Runs the Python application container
 
 Retrieve Public IP from Terraform output
 
-Access in browser:
-
-
-http://<EC2-PUBLIC-IP>:<PORT>
-
-
 ---
 
 🧹 Step 4 — Destroy Infrastructure
@@ -148,3 +145,4 @@ Terraform enables scalable cloud provisioning
 AWS EC2 provides reliable hosting
 
 Combining Docker & Terraform automates deployment workflows
+
